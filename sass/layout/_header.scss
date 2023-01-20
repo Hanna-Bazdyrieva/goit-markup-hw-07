@@ -1,0 +1,104 @@
+.logo {
+    @extend %link;
+    font-family: $ralewayFont;
+    @include font (700, 26px, 1.19, 0.03em);
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
+
+    color: $accentColor;
+
+    &--header {
+        display: flex;
+        align-items: center;
+        color: $accentColor;
+        transition: color $transitionTimeCubic;
+    }
+    &--footer {
+        margin-bottom: 20px;
+    }
+}
+
+.logo__studio {
+    color: $titleTextColor;
+
+    &--footer {
+        color: $whiteColor;
+    }
+}
+
+.header {
+    &__container {
+    display: flex;
+    border-bottom: 1px solid $headerBorderColor;
+}
+    &__contacts {
+        @extend %list;
+        display: flex;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    &__item:not(:first-of-type) {
+        margin-left: 50px;
+    }
+    &__note {
+        @extend %link;
+        display: flex;  
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        @include font (500, null, 1.14, 0.02em);
+        // font-weight: 500;
+        // line-height: 1.14;
+        // letter-spacing: 0.02em;
+        transition: color $transitionTimeCubic;
+    }
+    &__note:last-of-type {
+        margin-left: 30px;
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+
+        fill: currentColor;
+    }
+}
+.header__navigation {
+    @extend %list;
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+.header__link {
+    @extend %link;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include font (500, 14px, 1.14, 0.02em);
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.02em;
+
+    color: $titleTextColor;
+    transition: color $transitionTimeCubic;
+
+    &--current {
+        color: $accentColor;
+    }
+    &--current:after {
+        content: " ";
+        position: absolute;
+        left: -2px;
+        bottom: -1px;
+        width: calc(100% + 4px);
+        height: 4px;
+
+        background-color: $accentColor;
+        border-radius: 2px;
+    }
+}

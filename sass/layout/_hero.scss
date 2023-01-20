@@ -1,0 +1,33 @@
+// HERO
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-color: $hoverBtnColor;
+    background-image: $heroBackgroundGradient, $heroBackgroundImage;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__title {
+        margin: 0 auto 30px auto;
+        width: 696px;
+
+        @include font (900, 44px, 1.35, 0.06em);
+        // font-weight: 900;
+        // font-size: 44px;
+        // line-height: 1.36;
+        // letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $whiteColor;
+    }
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 216px;
+    }
+}

@@ -1,0 +1,40 @@
+//clients section
+.clients {
+
+    &__list {
+        @extend %list;
+        display: flex;
+        margin-top: 50px;
+
+        justify-content: space-between;
+    }
+
+    &__icon {
+        display: block;
+        width: 106px;
+        height: 60px;
+
+        fill: currentColor;
+    }
+
+}
+
+.clients__link {
+    @extend %flexCenter;
+    width: 170px;
+    height: 92px;
+
+
+    color: $iconGrayColor;
+    border: 1px solid $iconGrayColor;
+    border-radius: 4px;
+
+    transition: color $transitionTimeCubic,
+        background-color $transitionTimeCubic;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+        border-color: $accentColor;
+    }
+}

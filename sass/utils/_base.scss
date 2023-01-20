@@ -1,0 +1,104 @@
+body {
+
+    margin: 0;
+    font-family: $robotoFont;
+    font-style: normal;
+    @include font (null, 14px, 1.71, 0.03em);
+   
+    color: #757575;
+    background-color: #ffffff;
+}
+
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: $containerWidth;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--no-padding {
+        padding-top: 0;
+    }
+
+    &--no-margin-bottom {
+        margin-bottom: 0;
+    }
+
+    &--top-margin {
+        margin-top: 94px;
+    }
+
+    &--bg-secondary {
+        background-color: $paleGreyColor;
+    }
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    @include font (700, 36px, 1.16, 0.03em);
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.16;
+    // letter-spacing: 0.03em;
+    text-align: center;
+
+    color: $titleTextColor;
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.title--footer {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @include font(700, 14px, 1.14, 0.03em);
+    // font-size: 14px;
+    // font-weight: 700;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $whiteColor;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    outline: none;
+
+    color: $primaryTextColor;
+    transition: color $transitionTimeCubic;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}

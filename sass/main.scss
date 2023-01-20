@@ -1,0 +1,26 @@
+@import '../sass/utils/_variables.scss';
+
+@import '../sass/utils/_placeholders.scss';
+@import '../sass/utils/visually-hidden';
+@import '../sass/utils/mixins';
+@import '../sass/utils/base';
+
+
+// url (https:/fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap);
+
+// @import '../sass/components/';
+@import '../sass/components/button';
+@import '../sass/components/socials';
+@import '../sass/components/subscribe';
+@import '../sass/components/order-form';
+
+@import '../sass/layout/_header.scss';
+@import '../sass/layout/hero';
+@import '../sass/layout/feature';
+@import '../sass/layout/activities';
+@import '../sass/layout/team';
+@import '../sass/layout/clients';
+@import '../sass/layout/footer';
+@import '../sass/layout/modal';
+@import '../sass/layout/portfolio';
+

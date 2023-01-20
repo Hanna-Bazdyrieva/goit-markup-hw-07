@@ -1,0 +1,44 @@
+//feature section
+
+.feature__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    &--hide {
+        display: none;
+    }
+}
+
+.feature {
+
+    &__list {
+        @extend %list;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__wrap {
+        @extend %flexCenter;
+        width: 270px;
+        height: 120px;
+
+        margin-bottom: 30px;
+
+        background-color: $paleGreyColor;
+        border-radius: 4px;
+    }
+
+    &__headline {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        @include font(700, 14px, 1.14, 0.03em);
+        // font-weight: 700;
+        // font-size: 14px;
+        // line-height: 1.14;
+        // letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: $titleTextColor;
+    }
+}

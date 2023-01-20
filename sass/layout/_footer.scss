@@ -1,0 +1,130 @@
+.footer {
+    background-color: $footerBcgColor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+    }
+    &__subscribe {
+        margin-left: 93px;
+         margin-top: 12px;
+    }
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    &__list {
+        @extend %list;
+    }
+    &__link {
+        @extend %link;
+        color: $whiteColor;
+        transition: color $transitionTimeCubic;
+    }
+    &__contact {
+        @extend %link;
+        margin-top: 9px;
+        color: $footerTextColor;
+    }
+}
+
+.join {
+    margin-top: 12px;
+    margin-left: 70px;
+    // &__title {
+     
+    // }
+    &__socials {
+        gap: 10px;
+     }
+}
+.socials__link--footer {
+    color: $whiteColor;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/////
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-field {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    @include font (400, 16px, 1.25, 0.03em);
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height: 1.25;
+    // letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscribe-field::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-field:hover,
+.subscribe-field:focus,
+.subscribe-field:focus-visible {
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+}
+
+.subscribe-button {
+    padding: 10px 28px;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color var(--transition);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--hero-btn-active-color);
+}
+
+.send-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    fill: currentColor;
+}

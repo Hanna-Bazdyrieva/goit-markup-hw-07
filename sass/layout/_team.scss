@@ -1,0 +1,51 @@
+//team section
+.team {
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: $paleGreyColor;
+
+    &__list {
+        @extend %list;
+        display: flex;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    &__card {
+        max-width: 270px;
+        padding-bottom: 30px;
+
+        background-color: $whiteColor;
+        box-shadow: $basicShadow;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__details {
+        padding-top: 30px;
+        padding-bottom: 16px;
+    }
+
+    &__name {
+        @include font (500, 16px, 1.19, 0.03em);
+        // font-weight: 500;
+        // font-size: 16px;
+        // line-height: 1.19;
+        // letter-spacing: 0.03em;
+        text-align: center;
+
+        color: $titleTextColor;
+    }
+
+    &__job {
+        padding-top: 10px;
+        @include font (null, 16px, 1.19, 0.03em);
+        // font-size: 16px;
+        // line-height: 1.19;
+        // letter-spacing: 0.03em;
+        text-align: center;
+        }
+    &__socials {
+        padding: 0 32px;
+    }
+}
